@@ -533,6 +533,7 @@ margin-bottom: 15px;
   text-align: center;
   transition: transform 0.2s ease-in-out;
   height: 550px;
+  margin: 10px;
 }
 
 .product-card:hover {
@@ -577,4 +578,16 @@ margin-bottom: 15px;
 
 .buy-now:hover {
   background: #219150;
+}
+@media (max-width:497px) {
+.product-card{
+  width: 100%;
+}
+.product-image{
+  width: 100%;
+}
+.sec4{
+  width: 250px;
+  
+}
 }
