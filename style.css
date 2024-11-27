@@ -445,11 +445,11 @@ flex-wrap: wrap;
   box-shadow: 0px 0px 5px #afafaf;
 
 }
-.what-to-learn{
+.our-products{
   text-align: center;
   margin-bottom: 25px;
 }
-.what-to-learn::after {
+.our-products::after {
   position: absolute;
   content: "";
   width: 13%;
