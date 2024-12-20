@@ -664,4 +664,16 @@ margin-bottom: 15px;
   .empty-cart-button:hover {
     background-color: #d32f2f;
   }
- 
+  .confirm-order-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .confirm-order-button:hover {
+    background-color: #218838;
+  }
+  
