@@ -303,6 +303,44 @@ function confirmOrder() {
     showMessage('Order not confirmed.');
   }
 }
+function updateCartUI() {
+  const cartItems = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+
+  // مسح قائمة السلة الحالية
+  cartItems.innerHTML = '';
+
+  // إضافة كل عنصر في السلة مع زر "إزالة"
+  cart.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - $${item.price}`;
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Remove';
+    removeButton.className = 'remove-item-button';
+    removeButton.onclick = () => removeItemFromCart(index); // إزالة العنصر المحدد
+    li.appendChild(removeButton);
+
+    cartItems.appendChild(li);
+  });
+
+  // تحديث السعر الإجمالي
+  cartTotal.textContent = total.toFixed(2);
+}
+function removeItemFromCart(index) {
+  // طرح سعر العنصر من الإجمالي
+  total -= cart[index].price;
+
+  // إزالة العنصر من السلة
+  cart.splice(index, 1);
+
+  // تحديث واجهة المستخدم
+  updateCartUI();
+
+  // عرض رسالة تأكيد الإزالة
+  showMessage('Item removed from cart.', 'success');
+}
+
 
   </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
