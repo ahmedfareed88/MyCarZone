@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/download__4_-removebg-preview.png">
+  <link rel="shortcut icon" href="images/automotive.png">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <script src="main.js" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +15,7 @@
   integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
   defer></script>
 
-  <title>MY CARZONE</title>
+  <title>Automotive</title>
 </head>
 
 <body id="body">
@@ -69,7 +69,7 @@
   <!-- the main section of the page (introduction fashi5a) by fareed -->
   <section class="section1" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
     <div class="main-div">
-      <h1>Welcome to My Car Zone - Your Gateway to Excellence on Wheels!</h1>
+      <h1>Welcome to Automotive Car Zone - Your Gateway to Excellence on Wheels!</h1>
       <p>Discover a wide range of premium cars that match your lifestyle and needs. At My Car Zone, we offer high-quality vehicles, expert guidance, and exceptional after-sales service to ensure you drive home with confidence and satisfaction. Explore our collection, learn about the latest automotive trends, and find your dream car today!
 
       </p>
@@ -160,7 +160,7 @@
    
 <b class="b1">Explanatory video:</b>
 <iframe width="942" height="530" src="https://www.youtube.com/embed/Q4dpXlXlWK4" title="تعليم قياده السيارات الاوتوماتيك الجزء الاول" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
-<input type="text" class="text" placeholder="What did you learn??">  
+<input type="text" class="text" placeholder="Tell us your question">  
 <button class="send-btn" id="Coder frid">send</button>
 
     </div>
@@ -168,54 +168,111 @@
 
 <h1 class="our-products" id="bsd"  data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">Our products</h1>
 
-<section class="sec4"  data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
-
+<section class="sec4">
+  <!-- Product Cards -->
   <div class="product-card">
     <img src="images/bmw.png" alt="Car Image" class="product-image" width="250">
     <div class="product-info">
       <h2 class="product-title">BMW X6</h2>
-      <p class="product-description">
-        The BMW X6 is a luxury crossover SUV that combines the performance and power of an SUV with the sleek, sporty design of a coupe. Launched by BMW in 2008, it features a bold, aggressive exterior with a sloping roofline that gives it a coupe-like appearance.</p>
+      <p class="product-description">The BMW X6 is a luxury crossover SUV that combines the performance...</p>
       <p class="product-price">$80,000</p>
-      <button class="buy-now">Buy Now</button>
+      <button class="buy-now" onclick="addToCart('BMW X6', 80000)">Buy Now</button>
     </div>
   </div>
   <div class="product-card">
-    <img src="images/Merc c200.webp" alt="Coder frid" class="product-image" width="150">
+    <img src="images/Merc c200.webp" alt="Car Image" class="product-image" width="250">
     <div class="product-info">
-      <h2 class="product-title">Mercedes c200</h2>
-      <p class="product-description">The Mercedes-Benz C200 is a luxury compact sedan that combines elegant design, advanced technology, and strong performance. Part of the C-Class lineup, the C200 offers a refined driving experience with a blend of comfort and sportiness. It features a turbocharged 2.0-liter four-cylinder engine, delivering efficient power with smooth acceleration and a quiet ride.</p>
+      <h2 class="product-title">Mercedes C200</h2>
+      <p class="product-description">The Mercedes-Benz C200 is a luxury compact sedan...</p>
       <p class="product-price">$50,000</p>
-      <button class="buy-now">Buy Now</button>
+      <button class="buy-now" onclick="addToCart('Mercedes C200', 50000)">Buy Now</button>
     </div>
-  </div><div class="product-card">
+  </div>
+  <div class="product-card">
     <img src="images/cosy.avif" alt="Car Image" class="product-image" width="250">
     <div class="product-info">
       <h2 class="product-title">Mini Cooper</h2>
-      <p class="product-description">
-        The Mini Cooper is a small, stylish, and sporty car that has become an icon in the automotive world due to its unique design and fun driving experience. Originally launched by the British automaker in the 1960s, the Mini Cooper has evolved over the years while maintaining its charming compact size and distinctive look.</p>
+      <p class="product-description">The Mini Cooper is a small, stylish, and sporty car...</p>
       <p class="product-price">$25,000</p>
-      <button class="buy-now">Buy Now</button>
+      <button class="buy-now" onclick="addToCart('Mini Cooper', 25000)">Buy Now</button>
     </div>
-  </div><div class="product-card">
+  </div>
+  <div class="product-card">
     <img src="images/a475b68920e616209e51b6f58b6327a1.jpg" alt="Car Image" class="product-image" width="250">
     <div class="product-info">
       <h2 class="product-title">Porsche Cayenne</h2>
-      <p class="product-description">The Porsche Cayenne is a luxury midsize SUV that combines high-performance driving dynamics with the practicality of an SUV. First introduced in 2002, the Cayenne has become one of Porsche's most successful models, offering a mix of speed, luxury, and off-road capability.</p>
+      <p class="product-description">The Porsche Cayenne is a luxury midsize SUV...</p>
       <p class="product-price">$80,000</p>
-      <button class="buy-now">Buy Now</button>
+      <button class="buy-now" onclick="addToCart('Porsche Cayenne', 80000)">Buy Now</button>
     </div>
   </div>
-
-
-
-
-
-
-
 </section>
+
+<!-- Cart Section -->
+<section class="cart-section">
+  <h1 class="urcart">Your Cart</h1>
+  <ul id="cart-items" class="cart-items"></ul>
+  <p class="cart-total">Total: $<span id="cart-total">0</span></p>
+  <button class="empty-cart-button" onclick="emptyCart()">Empty Cart</button>
+</section>
+
+  <!-- Cart Section -->
+  <!-- Message Box -->
+  <div id="message-box" class="message-box"></div>
+  <script>
+    const cart = [];
+    let total = 0;
+
+    // Add product to cart
+    function addToCart(productName, price) {
+      cart.push({ name: productName, price: price });
+      total += price;
+      updateCartUI();
+      // Show confirmation message
+      showMessage(`${productName} has been added to your cart.`);
+    }
+
+    // Update cart UI
+    function updateCartUI() {
+      const cartItems = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+
+      // Clear the current cart list
+      cartItems.innerHTML = '';
+
+      // Add each item in the cart to the list
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        cartItems.appendChild(li);
+      });
+
+      // Update total price
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    // Show message on screen
+    function showMessage(message) {
+      const messageBox = document.getElementById('message-box');
+      messageBox.textContent = message;
+      messageBox.classList.add('show');
+
+      // Hide the message after 3 seconds
+      setTimeout(() => {
+        messageBox.classList.remove('show');
+      }, 3000);
+    }
+       // Empty the cart
+       function emptyCart() {
+      cart.length = 0; // Clear the cart array
+      total = 0; // Reset the total
+      updateCartUI();
+      showMessage('The cart has been emptied.');
+    }
+  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
+
   AOS.init();
 </script>
 </body>
