@@ -214,6 +214,7 @@
   <ul id="cart-items" class="cart-items"></ul>
   <p class="cart-total">Total: $<span id="cart-total">0</span></p>
   <button class="empty-cart-button" onclick="emptyCart()">Empty Cart</button>
+  <button class="confirm-order-button" onclick="confirmOrder()">Confirm Your Order</button>
 </section>
 
   <!-- Cart Section -->
@@ -269,6 +270,40 @@
       updateCartUI();
       showMessage('The cart has been emptied.');
     }
+    function confirmOrder() {
+  if (cart.length === 0) {
+    showMessage('Your cart is empty. Please add items to confirm your order.');
+    return;
+  }
+
+  const orderDetails = cart.map(item => `${item.name} - $${item.price}`).join('\n');
+  const confirmation = confirm(`You are about to confirm the following order:\n\n${orderDetails}\n\nTotal: $${total.toFixed(2)}\n\nDo you want to proceed?`);
+
+  if (confirmation) {
+    showMessage('Thank you for your order!');
+    emptyCart(); // Clear the cart after confirmation
+  } else {
+    showMessage('Order not confirmed.');
+  }
+}
+function confirmOrder() {
+  if (cart.length === 0) {
+    showMessage('Your cart is empty. Please add items to confirm your order.');
+    return;
+  }
+
+  const orderDetails = cart.map(item => `${item.name} - $${item.price}`).join('\n');
+  const confirmation = confirm(`You are about to confirm the following order:\n\n${orderDetails}\n\nTotal: $${total.toFixed(2)}\n\nDo you want to proceed?`);
+
+  if (confirmation) {
+    alert('Your order confirmed successfully!');
+    showMessage('Your order confirmed successfully!');
+    emptyCart(); // Clear the cart after confirmation
+  } else {
+    showMessage('Order not confirmed.');
+  }
+}
+
   </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
